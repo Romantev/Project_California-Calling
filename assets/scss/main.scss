@@ -3,311 +3,459 @@
 @import "style";
 
 header {
-    background-color: $second-color;
-    height: 100%;
-    padding-bottom: 5vw;
+  background-color: $second-color;
+  height: 100%;
+  padding-bottom: 5vw;
 
-    article {
-        @include flexing;
-        margin-bottom: 5vw;
-        height: 15vh;
-        width: 50vw;
-        border-right: 1px solid rgb(77, 77, 77);
+  article {
+    @include flexing;
+    margin-bottom: 5vw;
+    height: 15vh;
+    width: 50vw;
+    border-right: 1px solid rgb(77, 77, 77);
+  }
+
+  section {
+    @include flexing;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10vw;
+
+    p {
+      margin-bottom: 2vw;
     }
-
-    section {
-        @include flexing;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 10vw;
-
-        p {
-            margin-bottom: 2vw;
-        }
-        span {
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke: 2px white;
-            display: block;
-        }
+    span {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px white;
+      display: block;
     }
+  }
 
-    nav {
-        @include flexing;
-        justify-content: space-between;
-        padding: 0 $space-out;
+  nav {
+    @include flexing;
+    justify-content: space-between;
+    padding: 0 $space-out;
 
-        img {
-            width: 6%;
-        }
+    img {
+      width: 6%;
     }
+  }
 }
 
 .data {
-    background: $second-color;
-    padding: 0 $space-out;
-    
-    h2 {
-        width: 70vw;
-        position: relative;
-        z-index: 10;
-        margin-bottom: 7vw
-    }
-    
-    article {
-        @include flexing;
-        justify-content: space-between;
-        position: relative;
-        margin-bottom: 7vw;
+  background: $second-color;
+  padding: 0 $space-out;
 
-        p {
-            margin-bottom: 0.5vw;
-        }
+  h2 {
+    width: 70vw;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 7vw;
+  }
 
-        h3 {
-            margin-bottom: 5vw;
-            font-size: 4vw;
-        }
-        
-        img {
-            width: 35%;
-            position: absolute;
-            top: -35%;
-            right: -5%;
-        }
+  article {
+    @include flexing;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 7vw;
+
+    p {
+      margin-bottom: 0.5vw;
     }
+
+    h3 {
+      margin-bottom: 5vw;
+      font-size: 4vw;
+    }
+
+    img {
+      width: 35%;
+      position: absolute;
+      top: -35%;
+      right: -5%;
+    }
+  }
 }
 
 .pictures {
-    background-color: $main-color;
-    position: relative;
-    @include flexing;
+  background-color: $main-color;
+  position: relative;
+  @include flexing;
 
-    article {
+  article {
+    margin: 30vw 30vw 20vw 30vw;
 
-        margin: 30vw 30vw 20vw 30vw;
-
-        h2 {
-            color: $second-color;
-            line-height: 6vw;
-            margin-bottom: 2vw;
-        }
-    
-        p {
-            color: $second-color;
-            line-height: 2vw;
-            font-weight: 600;
-            margin: 0 auto;
-    
-            &:nth-of-type(1) {
-                margin-bottom: 50vw;
-            }
-            &:nth-of-type(2) {
-                width: 35vw;
-            }
-        }
-
-        img {
-            width: 25%;
-            position: absolute;
-        }
-    
-        .action1 {
-            @include position-right (-5%, 10%);
-        }
-    
-        .action2 {
-            @include position-left (10%, 2%)
-        }
-        
-        .action3 {
-            @include position-right(33%, 0);
-        }
-
-        .action4 {
-            @include position-left (50%, 15%);
-        }
-
-        .action5 {
-            @include position-right (55%, 15%);
-        }
-
-        .action6 {
-            @include position-left (72%, 0);
-        }
-
-        .action7 {
-            @include position-right(92%, 20%);
-        }
+    h2 {
+      color: $second-color;
+      line-height: 6vw;
+      margin-bottom: 2vw;
     }
+
+    p {
+      color: $second-color;
+      line-height: 2vw;
+      font-weight: 600;
+      margin: 0 auto;
+
+      &:nth-of-type(1) {
+        margin-bottom: 50vw;
+      }
+      &:nth-of-type(2) {
+        width: 35vw;
+      }
+    }
+
+    img {
+      width: 25%;
+      position: absolute;
+    }
+
+    .action1 {
+      @include position-right(-5%, 10%);
+    }
+
+    .action2 {
+      @include position-left(10%, 2%);
+    }
+
+    .action3 {
+      @include position-right(33%, 0);
+    }
+
+    .action4 {
+      @include position-left(50%, 15%);
+    }
+
+    .action5 {
+      @include position-right(55%, 15%);
+    }
+
+    .action6 {
+      @include position-left(72%, 0);
+    }
+
+    .action7 {
+      @include position-right(92%, 20%);
+    }
+  }
 }
 
 .golden-bear {
-    height: 100%;
-    padding: 20vw $space-out 0 $space-out;
+  height: 100%;
+  padding: 20vw $space-out 0 $space-out;
 
-    article {
-        display: flex;
-        justify-content: space-between;
-
-        div {
-            justify-content: start;
-            align-items: start;
-            flex-direction: column;
-
-            p {
-                margin-bottom: 3vw;
-            }
-    
-            h2 {
-                line-height: 5.5vw;
-                width: 20vw;
-            }
-    
-            h3 {
-                width: 40vw;
-                line-height: 3vw;
-                margin-bottom: 2vw;
-            }
-        }
-    }
+  article {
+    display: flex;
+    justify-content: space-between;
 
     div {
-        @include flexing;
-        margin-top: -7vw;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
 
-        img {
-            &:nth-of-type(1) {
-                width: 50%;
-                transform: translate(0, 15%);
-                z-index: 5;
-            }
-            &:nth-of-type(2) {
-                width: 30%;
-                z-index: 10;
-                transform: translate(-15%, 25%);
-            }
-        }
+      p {
+        margin-bottom: 3vw;
+      }
+
+      h2 {
+        line-height: 5.5vw;
+        width: 20vw;
+      }
+
+      h3 {
+        width: 40vw;
+        line-height: 3vw;
+        margin-bottom: 2vw;
+      }
     }
+  }
+
+  div {
+    @include flexing;
+    margin-top: -7vw;
+
+    img {
+      &:nth-of-type(1) {
+        width: 50%;
+        transform: translate(0, 15%);
+        z-index: 5;
+      }
+      &:nth-of-type(2) {
+        width: 30%;
+        z-index: 10;
+        transform: translate(-15%, 25%);
+      }
+    }
+  }
 }
 
 .poppy-bear {
-    background-color: $main-color;
-    padding: 30vw $space-out 10vw $space-out;
-    position: relative;
+  background-color: $main-color;
+  padding: 30vw $space-out 10vw $space-out;
+  position: relative;
 
-    .circle {
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        
-        img {
-            width: 40%;
-            overflow: hidden;
-            transform: translate(180%, -25%);
-            animation: circle-rotate 5s linear infinite;
-        }
+  .circle {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    img {
+      width: 40%;
+      overflow: hidden;
+      transform: translate(180%, -25%);
+      animation: circle-rotate 5s linear infinite;
     }
+  }
 
-    article {
-        display: flex;
-        justify-content: space-between;
+  article {
+    display: flex;
+    justify-content: space-between;
 
-        div {
-            justify-content: start;
-            align-items: start;
-            flex-direction: column;
+    div {
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
 
-            p {
-                margin-bottom: 3vw;
-                color: $second-color;
-            }
-    
-            h2 {
-                line-height: 5.5vw;
-                width: 20vw;
-                color: $second-color;
-            }
-    
-            h3 {
-                width: 40vw;
-                line-height: 3vw;
-                margin-bottom: 2vw;
-                color: $second-color;
-            }
-        }
+      p {
+        margin-bottom: 3vw;
+        color: $second-color;
+      }
+
+      h2 {
+        line-height: 5.5vw;
+        width: 20vw;
+        color: $second-color;
+      }
+
+      h3 {
+        width: 40vw;
+        line-height: 3vw;
+        margin-bottom: 2vw;
+        color: $second-color;
+      }
     }
+  }
 
-    .picture-div {
-        @include flexing;
+  .picture-div {
+    @include flexing;
 
-        img {
-            &:nth-of-type(2) {
-                width: 50%;
-                transform: translate(-15%, 0);
-                z-index: 5;
-            }
-            &:nth-of-type(1) {
-                width: 30%;
-                transform: translate(0, 0);
-                z-index: 10;
-            }
-        }
+    img {
+      &:nth-of-type(2) {
+        width: 50%;
+        transform: translate(-15%, 0);
+        z-index: 5;
+      }
+      &:nth-of-type(1) {
+        width: 30%;
+        transform: translate(0, 0);
+        z-index: 10;
+      }
     }
+  }
 }
 
 footer {
-    padding-left: $space-out;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  padding-left: $space-out;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    .left {
-        margin-top: 10vw;
+  .left {
+    margin-top: 10vw;
 
-        p {
-            margin-bottom: 2vw;
-        }
-
-        h3 {
-            width: 40vw;
-            margin-bottom: 2vw;
-        }
-
-        button {
-            margin-bottom: 5vw;
-        }
-
-        img {
-            width: 5%;
-            margin: 0 0.4vw 1vw 0.4vw;
-        }
+    p {
+      margin-bottom: 2vw;
     }
 
-    .right {
-        overflow: hidden;
-
-        .banner {
-            width: 120vw;
-            background-color: $main-color;
-            transform: translate(-30%, 150%) rotate(45deg);
-            margin-bottom: 35vw;
-        }
-        
-        h2 {
-            color: $second-color;
-            animation: banner 10s linear infinite;
-            }
-
-
-            span {
-                color: $second-color;
-                -webkit-text-fill-color: transparent;
-                -webkit-text-stroke: 2px black;
-            }
-        }
+    h3 {
+      width: 40vw;
+      margin-bottom: 2vw;
     }
 
-    .logo {
-        transform: translate(200%);
-        width: 20%;
+    button {
+      margin-bottom: 5vw;
     }
+
+    img {
+      width: 5%;
+      margin: 0 0.4vw 1vw 0.4vw;
+    }
+  }
+
+  .right {
+    overflow: hidden;
+
+    .banner {
+      width: 120vw;
+      background-color: $main-color;
+      transform: translate(-30%, 150%) rotate(45deg);
+      margin-bottom: 35vw;
+    }
+
+    h2 {
+      color: $second-color;
+      animation: banner 10s linear infinite;
+    }
+
+    span {
+      color: $second-color;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px black;
+    }
+  }
+}
+
+.logo {
+  transform: translate(200%);
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 15vw;
+    line-height: 10vw;
+  }
+  header section p {
+    font-size: 3vw;
+  }
+
+  header nav img {
+    width: 10vw;
+  }
+
+  button {
+    font-size: 4vw;
+  }
+
+  header {
+    margin-bottom: 10vw;
+  }
+
+  .data h2 {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .data article p {
+    font-size: 4vw;
+  }
+
+  .data article h3 {
+    font-size: 6vw;
+  }
+
+  .pictues {
+    flex-direction: column;
+  }
+
+  .pictures article {
+    margin: 10vw;
+  }
+
+  .pictures article h2 {
+    font-size: 10vw;
+    width: 100vw;
+    text-align: center;
+    line-height: 10vw;
+  }
+
+  .pictures article img {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 5vw;
+  }
+
+  .pictures article p {
+    font-size: 4vw;
+    line-height: 4vw;
+    text-align: center;
+  }
+
+  .pictures article p:nth-of-type(1) {
+    margin-bottom: 5vw;
+  }
+
+  .pictures article p:nth-of-type(2) {
+    width: 100vw;
+    margin-bottom: 5vw;
+  }
+
+  .pictures article .action1 {
+    right: 0;
+  }
+
+  .pictures article .action2 {
+    left: 0;
+  }
+
+  .pictures article .action3 {
+    right: 0;
+  }
+
+  .pictures article .action4 {
+    left: 0;
+  }
+
+  .pictures article .action5 {
+    right: 0;
+  }
+
+  .pictures article .action6 {
+    right: 0;
+  }
+
+  .pictures article .action7 {
+    right: 0;
+  }
+
+  .golden-bear article {
+    flex-direction: column;
+  }
+
+  .golden-bear article div p {
+    font-size: 3vw;
+  }
+  .golden-bear article div h2 {
+    font-size: 10vw;
+    width: 100vw;
+    margin-bottom: 15vw;
+  }
+  .golden-bear article div h3 {
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 90vw;
+    margin-bottom: 5vw;
+  }
+
+  .poppy-bear article {
+    flex-direction: column;
+  }
+
+  .poppy-bear article div p {
+    font-size: 3vw;
+  }
+  .poppy-bear article div h2 {
+    font-size: 10vw;
+    width: 100vw;
+    margin-bottom: 10vw;
+  }
+  .poppy-bear article div h3 {
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 90vw;
+    margin-bottom: 5vw;
+  }
+
+  footer .left p {
+    font-size: 3vw;
+  }
+
+  footer .left h3 {
+    font-size: 3vw;
+  }
+
+  .logo {
+    width: 25vw;
+    transform: translate(0);
+  }
+}

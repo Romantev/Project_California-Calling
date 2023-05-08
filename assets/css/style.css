@@ -27,7 +27,9 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: lora, Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -355,6 +357,129 @@ footer .right span {
 .logo {
   transform: translate(200%);
   width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 15vw;
+    line-height: 10vw;
+  }
+  header section p {
+    font-size: 3vw;
+  }
+  header nav img {
+    width: 10vw;
+  }
+  button {
+    font-size: 4vw;
+  }
+  header {
+    margin-bottom: 10vw;
+  }
+  .data h2 {
+    width: 90vw;
+    text-align: center;
+  }
+  .data article p {
+    font-size: 4vw;
+  }
+  .data article h3 {
+    font-size: 6vw;
+  }
+  .pictues {
+    flex-direction: column;
+  }
+  .pictures article {
+    margin: 10vw;
+  }
+  .pictures article h2 {
+    font-size: 10vw;
+    width: 100vw;
+    text-align: center;
+    line-height: 10vw;
+  }
+  .pictures article img {
+    width: 100vw;
+    position: relative;
+    margin-bottom: 5vw;
+  }
+  .pictures article p {
+    font-size: 4vw;
+    line-height: 4vw;
+    text-align: center;
+  }
+  .pictures article p:nth-of-type(1) {
+    margin-bottom: 5vw;
+  }
+  .pictures article p:nth-of-type(2) {
+    width: 100vw;
+    margin-bottom: 5vw;
+  }
+  .pictures article .action1 {
+    right: 0;
+  }
+  .pictures article .action2 {
+    left: 0;
+  }
+  .pictures article .action3 {
+    right: 0;
+  }
+  .pictures article .action4 {
+    left: 0;
+  }
+  .pictures article .action5 {
+    right: 0;
+  }
+  .pictures article .action6 {
+    right: 0;
+  }
+  .pictures article .action7 {
+    right: 0;
+  }
+  .golden-bear article {
+    flex-direction: column;
+  }
+  .golden-bear article div p {
+    font-size: 3vw;
+  }
+  .golden-bear article div h2 {
+    font-size: 10vw;
+    width: 100vw;
+    margin-bottom: 15vw;
+  }
+  .golden-bear article div h3 {
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 90vw;
+    margin-bottom: 5vw;
+  }
+  .poppy-bear article {
+    flex-direction: column;
+  }
+  .poppy-bear article div p {
+    font-size: 3vw;
+  }
+  .poppy-bear article div h2 {
+    font-size: 10vw;
+    width: 100vw;
+    margin-bottom: 10vw;
+  }
+  .poppy-bear article div h3 {
+    font-size: 4vw;
+    line-height: 4vw;
+    width: 90vw;
+    margin-bottom: 5vw;
+  }
+  footer .left p {
+    font-size: 3vw;
+  }
+  footer .left h3 {
+    font-size: 3vw;
+  }
+  .logo {
+    width: 25vw;
+    transform: translate(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
